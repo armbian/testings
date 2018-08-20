@@ -1,0 +1,6 @@
+NETWORK=yes
+WIRELESS=yes
+HDMI=yes
+USB=yes
+DVFS=yes
+ARMBIANMONITOR="http://ix.io/1kMo"
