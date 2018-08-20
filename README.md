@@ -7,8 +7,9 @@
 
 More info:
 https://docs.armbian.com/Process_Contribute/
+
 # What exactly I need to do?
-1. Boot your board with nightly test build
+1. Boot your board with freshly made image or nightly test build
 2. Check their basic functions and report if they work with: yes/no, leave empty for in between.
 3. Create a new test file report
 
