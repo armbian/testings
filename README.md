@@ -3,7 +3,7 @@
 
 1. Fork this repository
 2. Make Changes - add new or edit current report
-3. Create a pull request
+3. Create a pull request or request for [commit rights](https://www.armbian.com/contact).
 
 More info:
 https://docs.armbian.com/Process_Contribute/
@@ -39,7 +39,3 @@ Config content example:
 # Which fields are mandatory?
 
 ARMBIANMONITOR
-
-# Can I help more?
-
-If you want to help reguraly, feel free to ask for [commit rights](https://www.armbian.com/contact).
