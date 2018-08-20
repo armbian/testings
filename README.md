@@ -2,7 +2,7 @@
 # How to create a test report?
 
 1. Fork this repository
-2. Make Changes - add new or edit current report
+2. Make changes - add new or edit current report
 3. Create a pull request or request for [commit rights](https://www.armbian.com/contact).
 
 More info:
@@ -10,8 +10,8 @@ https://docs.armbian.com/Process_Contribute/
 
 # What exactly I need to do?
 1. Boot the board with fresh self-made image or nightly. You can also upgrade to nightly with [armbian-config](https://docs.armbian.com/User-Guide_Armbian-Config/)
-2. Check their basic functions and report if they work with: yes/no, leave empty for in between.
-3. Create a new test file report
+2. Check board basic functions and create report as in example below. Yes/no, leave empty for in between, ...
+3. Create a new test file report or edit existing
 
 # What filename should I choose?
 
