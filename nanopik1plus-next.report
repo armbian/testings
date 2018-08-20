@@ -1,5 +1,5 @@
 NETWORK=yes
-WIRELESS="n/a"
+WIRELESS=no
 HDMI=yes
 USB=yes
 DVFS=yes
