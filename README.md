@@ -22,6 +22,12 @@ Filename is build from:
 Correct board name can be checked [here](https://github.com/armbian/build/tree/master/config/boards) (without .conf). Kernel branch can be read on your board this way:
 `cat /etc/armbian-release | grep BRANCH`
 
+# Where can I see end resoult?
+
+We are building kernels once per day and this report is refreshed with it. You can check it here:
+
+https://beta.armbian.com/buildlogs/report.html
+
 # Report filename example: 
 
     bananapipro-next.report
