@@ -1,0 +1,7 @@
+BOOT=yes
+NETWORK=yes
+WIRELESS="n/a"
+HDMI="n/a"
+USB=yes
+DVFS=yes
+ARMBIANMONITOR="http://ix.io/1kV0"
