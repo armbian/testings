@@ -9,8 +9,9 @@
     cd testings
     ./createreport.sh
 
-# Where is summary?
+# How they are used?
 
-We are building kernels once per day and this report is refreshed with it. You can check it here:
+We are building kernels once per day and these reports are included in this cycle.
 
-https://beta.armbian.com/buildlogs/report.html
+Check [here](https://beta.armbian.com/buildlogs/report.html) for current status.
+
