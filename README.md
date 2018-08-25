@@ -1,6 +1,6 @@
 # What do I need?
 
-1. Official Armbian nightly image (any stable can be switched to beta from armbian-config)
+1. Official Armbian nightly image (any stable can be switched to nightly from armbian-config)
 2. GitHub account credentials
 
 # How to create a test report?
