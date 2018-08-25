@@ -61,6 +61,7 @@ createReport () {
     read -p 'WIRELESS: ' wlan && echo 'WIRELESS='$wlan >> ${BOARD}-${BRANCH}.report
     read -p 'HDMI: ' hdmi && echo 'HDMI='$hdmi >> ${BOARD}-${BRANCH}.report
     read -p 'USB: ' usb && echo 'USB='$usb >> ${BOARD}-${BRANCH}.report
+    read -p 'DVFS: ' dvfs && echo 'DVFS='$dvfs >> ${BOARD}-${BRANCH}.report
     echo "ARMBIANMONITOR="$(sudo armbianmonitor -u | head -n -2 | cut -c 54-) >> ${BOARD}-${BRANCH}.report
     git add -A && git commit
     hub fork
