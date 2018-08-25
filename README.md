@@ -5,7 +5,7 @@
     cd testings
     ./createreport.sh
 
-# Where is possible ton see the summary?
+# Where is summary?
 
 We are building kernels once per day and this report is refreshed with it. You can check it here:
 
