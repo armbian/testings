@@ -22,25 +22,25 @@ installHub () {
 
 checkDependencies () {
     echo 'check dependencies:'
-    if bash -c 'hub --version' >/dev/null; then 
+    if bash -c 'hub --version' >/dev/null; then
         echo 'Hub is installed'
     else
         checkArchidecture
         echo "Try install Hub"
         installHub ${HUB_ARCH}
-    fi    
+    fi
 }
 
 checkLocalconfig () {
-    if [[ $(cat .git/config | grep hub) ]]; then 
+    if [[ $(cat .git/config | grep -q '[hub]') ]]; then
         echo "https is set"
-    else 
-        echo "[user]" >> .git/config
+    else
+        echo "[hub]" >> .git/config
         echo "  protocol = https" >> .git/config
     fi
-    if [[ $(cat .git/config | grep user) ]]; then 
+    if [[ $(cat .git/config | grep user) ]]; then
         echo "local repo settings set"
-    else 
+    else
         echo "Please set local repo settings:"
         echo "[user]" >> .git/config
         read -p 'NAME: ' usname && echo 'name = '$usname >> .git/config
@@ -64,7 +64,7 @@ createReport () {
     echo "ARMBIANMONITOR="$(sudo armbianmonitor -u | head -n -2 | cut -c 54-) >> ${BOARD}-${BRANCH}.report
     git add -A && git commit
     hub fork
-    git push -u $(git remote -v | tail -n 1 | awk '{print $1}') $(date +%Y%m%d)-$BOARD-$BRANCH
+    git push -u $(git remote -v | awk '{print $1}' | grep -vEw origin | tail -n -1) $(date +%Y%m%d)-$BOARD-$BRANCH
     hub pull-request
 }
 
