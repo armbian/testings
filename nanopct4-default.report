@@ -1,0 +1,9 @@
+BOOT=yes
+VERSION=5.59
+KERNEL=4.4.152-rk3399
+NETWORK=yes
+WIRELESS=yes
+HDMI=yes
+USB=yes
+DVFS=yes
+ARMBIANMONITOR=http://ix.io/1lhu
