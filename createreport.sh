@@ -53,7 +53,7 @@ createReport () {
     BOARD=$(cat /etc/armbian-release | grep BOARD= | cut -c 7-)
     BRANCH=$(cat /etc/armbian-release | grep BRANCH= | cut -c 8-)
     git checkout -b $(date +%Y%m%d)-$BOARD-$BRANCH
-    echo "yes=works no=don't work NT=not tested NA=not populated NW=not working"
+    echo "yes=works no=don't work NT=not tested NA=not populated"
     echo 'BOOT=yes' > ${BOARD}-${BRANCH}.report
     cat /etc/armbian-release | grep VERSION >> ${BOARD}-${BRANCH}.report
     echo "KERNEL="$(uname -r) >> ${BOARD}-${BRANCH}.report
