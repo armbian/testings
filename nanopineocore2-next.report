@@ -1,7 +1,9 @@
-BOOT="yes"
-NETWORK="n/a"
-WIRELESS="n/a"
-HDMI="n/a"
+BOOT=yes
+VERSION=5.59
+KERNEL=4.14.65-sunxi64
+NETWORK=na
+WIRELESS=na
+HDMI=na
 USB=yes
 DVFS=yes
-ARMBIANMONITOR="http://ix.io/1kPF"
+ARMBIANMONITOR=http://ix.io/1kPF
