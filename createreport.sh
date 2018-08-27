@@ -87,8 +87,8 @@ createReport () {
 createTable () {
     git checkout master
     git pull origin master
-    echo "|BOARD|BOOT|VERSION|KERNEL|NETWORK|WIRELESS|HDMI|USB|DVFS|ARMBIANMONITOR|" > table.md
-    echo "|-----|----|-------|------|-------|--------|----|---|----|--------------|" >> table.md
+    echo "|BOARD|BOOT|VERSION|KERNEL|ETH|WIFI|HDMI|USB|DVFS|ARMBIANMONITOR|" > table.md
+    echo "|-----|----|-------|------|---|----|----|---|----|--------------|" >> table.md
     # GitHub has no possibility to colorize text in MarkDown, so we use some emoticons :P 
     cutter () {
         res=$(echo $1 | awk -F'=' '{print $2}')
