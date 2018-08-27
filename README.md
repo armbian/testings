@@ -22,6 +22,7 @@ Check [here](https://beta.armbian.com/buildlogs/report.html) for current status.
 |bananapim64-next|:heavy_check_mark:|5.59|4.14.65-sunxi64|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x:|http://ix.io/1kV6|
 |bananapi-next|:heavy_check_mark:|5.59|4.14.65-sunxi|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQc|
 |cubietruck-default|:heavy_check_mark:|5.59|3.4.113-sun7i|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQ2|
+|cubietruck-dev|:heavy_check_mark:|5.59|4.18.5-sunxi|:heavy_check_mark:|:x:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lnN|
 |cubietruck-next|:heavy_check_mark:|5.59|4.14.65-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kPU|
 |cubox-i-next|:heavy_check_mark:|5.59|4.14.65-cubox|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kVF|
 |espressobin-default|:heavy_check_mark:|5.59|4.14.67-mvebu64|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lia|
@@ -34,6 +35,8 @@ Check [here](https://beta.armbian.com/buildlogs/report.html) for current status.
 |nanopineocore2-next|:heavy_check_mark:|5.59|4.14.65-sunxi64|na|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kPF|
 |orangepilite-default|:heavy_check_mark:|5.59|3.4.113-sun8i|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQl|
 |orangepione-next|:heavy_check_mark:|5.59|4.14.65-sunxi|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQj|
+|orangepipcplus-dev|:heavy_check_mark:|5.59.180827|4.18.5-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|:x:|http://ix.io/1lmm|
+|orangepipcplus-next|:heavy_check_mark:|5.59.180827|4.14.67-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1iiN|
 |orangepizero-dev|:heavy_check_mark:|5.59.180825|4.18.5-sunxi|:heavy_check_mark:|:heavy_check_mark:|NA|:heavy_check_mark:|:x:|http://ix.io/1li2|
 |orangepizero-next|:heavy_check_mark:|5.59.180825|4.14.67-sunxi|:heavy_check_mark:|:heavy_check_mark:|NA|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lhS|
 |orangepizeroplus2-h5-next|:heavy_check_mark:|5.59|4.14.65-sunxi64|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kMz|
