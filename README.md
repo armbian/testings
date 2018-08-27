@@ -15,8 +15,8 @@ We are building kernels once per day and these reports are included in this cycl
 
 Check [here](https://beta.armbian.com/buildlogs/report.html) for current status.
 
-|BOARD|BOOT|VERSION|KERNEL|NETWORK|WIRELESS|HDMI|USB|DVFS|ARMBIANMONITOR|
-|-----|----|-------|------|-------|--------|----|---|----|--------------|
+|BOARD|BOOT|VERSION|KERNEL|ETH|WIFI|HDMI|USB|DVFS|ARMBIANMONITOR|
+|-----|----|-------|------|---|----|----|---|----|--------------|
 |bananapi-default|:heavy_check_mark:|5.59|3.4.113-sun7i|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQe|
 |bananapim2ultra-dev|:heavy_check_mark:|5.59|4.18.3-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x:|http://ix.io/1kVQ|
 |bananapim64-next|:heavy_check_mark:|5.59|4.14.65-sunxi64|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x:|http://ix.io/1kV6|
