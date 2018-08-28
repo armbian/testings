@@ -67,11 +67,12 @@ createReport () {
     read -p 'DVFS: ' dvfs && echo 'DVFS='$dvfs >> ${BOARD}-${BRANCH}.report
     echo "ARMBIANMONITOR="$(sudo armbianmonitor -u | head -n -2 | cut -c 54-) >> ${BOARD}-${BRANCH}.report
     echo "==================================================="
-    git --no-pager diff
+    git add -A
+    git diff --cached
     read -p 'Do you want to push this changes upstream and send a PR to armbian? [YES/NO]: ' happy
     case $happy in
         yes|Yes|YES|y|Y)
-            git add -A && git commit
+            git commit
             hub fork
             git push -u $(git remote -v | awk '{print $1}' | grep -vEw origin | tail -n -1) $(date +%Y%m%d)-$BOARD-$BRANCH
             hub pull-request            
