@@ -6,4 +6,4 @@ WIRELESS=yes
 HDMI=nt
 USB=yes
 DVFS=no
-ARMBIANMONITOR=
+ARMBIANMONITOR=http://ix.io/1lre
