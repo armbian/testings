@@ -1,5 +1,10 @@
 #!/bin/bash
 HUB_ARCH=''
+#some colors we might need them 
+green='\e[92m'
+red='\e[91m'
+NC='\e[0m'
+bold='\e[1m'
 
 checkArchitecture () {
     if (dpkg --print-architecture | grep -q 'armhf'); then
@@ -118,20 +123,28 @@ createTable () {
 
 case $1 in
     -h|--help)
-        echo "createrport.sh will fork the repo, collect the data needed to create a proper report, asks you what you should test and send a PR to Armbian. A GitHub account is mandatory!"
+        echo ""
+        echo "createrport.sh will fork the repo, collect the data needed to create a proper"
+        echo -e "report, asks you what you should test and send a PR to Armbian. A ${red}GitHub"
+        echo -e "account is mandatory!${NC}"
+        echo ""
         echo "-h|--help     Show helptext"
-        echo "-t|--table    Creates a new table based on current masters branch and pushes it to origin master (armbian/testings only for people with commitrights to this repo can use this function)."
-        echo "-u|--update   Update masters branch of your fork (this is not needed for a proper working script, only for cosmetic housekeeping)"
-        echo "-d|--delete   Lists and deletes remote branches in your fork (with yes/no prompt, only for cosmetic housekeeping)"
+        echo "-t|--table    Creates a new table based on current masters branch and pushes it"
+        echo -e "              to origin master(armbian/testings ${red}only for people with"
+        echo -e "              commitrights${NC} to this repo can use this function)."
+        echo "-u|--update   Update masters branch of your fork (this is not needed for a"
+        echo "              proper working script, only for cosmetic housekeeping)"
+        echo "-d|--delete   Lists and deletes remote branches in your fork (with yes/no"
+        echo "              prompt, only for cosmetic housekeeping)"
         echo "*             create PR with your tests"
-    ;;
+        ;;
     -t|--table)
         echo "update table and README.md"
         createTable
         head -17 README.md > README1.md && mv README1.md README.md
         cat table.md >> README.md && rm table.md
         git add -A && git commit -m"Table updated: $(date +%Y%m%d)" && git push
-    ;;
+        ;;
     -u|--update)
         echo "update master of your fork"
         git checkout master
@@ -141,7 +154,7 @@ case $1 in
         hub fork
         git pull origin master
         git push $(git remote -v | awk '{print $1}' | grep -vEw origin | tail -n -1) master
-    ;;
+        ;;
     -d|--delete)
         echo "list and delete remotebranches of your fork"
         git checkout master
@@ -150,16 +163,18 @@ case $1 in
         #we try to fork it again in case you execute this script on a board/computer which wasn't used for PRs yet
         hub fork
         for remote in $(git ls-remote --heads  $(git remote -v | awk '{print $1}' | grep -vEw origin | tail -n -1) | awk -F'refs/heads/' '{print $2}'); do
-            read -p 'Delete $remote on Remote [Yes/No]: ' $yn
+            echo -e "Should: ${bodl}${red}${remote}${NC} be deleted on remote?"
+            read -p '[Yes/No]: ' yn
             if [[ $yn =~ ^[Yy](es)?$ ]]
             then
-                git push --delete git remote -v | awk '{print $1}' | grep -vEw origin | tail -n -1 $remote
+                git push --delete $(git remote -v | awk '{print $1}' | grep -vEw origin | tail -n -1) $remote
             fi
-    ;;
+        done
+        ;;
     *)
         checkDependencies
         createReport
-    ;;
+        ;;
 esac
 
 
