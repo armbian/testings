@@ -121,6 +121,8 @@ case $1 in
         echo "createrport.sh will fork the repo, collect the data needed to create a proper report, asks you what you should test and send a PR to Armbian. A GitHub account is mandatory!"
         echo "-h|--help     Show helptext"
         echo "-t|--table    Creates a new table based on current masters branch and pushes it to origin master (armbian/testings only for people with commitrights to this repo can use this function)."
+        echo "-u|--update   Update masters branch of your fork (this is not needed for a proper working script, only for cosmetic housekeeping)"
+        echo "-d|--delete   Lists and deletes remote branches in your fork (with yes/no prompt, only for cosmetic housekeeping)"
         echo "*             create PR with your tests"
     ;;
     -t|--table)
@@ -129,6 +131,30 @@ case $1 in
         head -17 README.md > README1.md && mv README1.md README.md
         cat table.md >> README.md && rm table.md
         git add -A && git commit -m"Table updated: $(date +%Y%m%d)" && git push
+    ;;
+    -u|--update)
+        echo "update master of your fork"
+        git checkout master
+        checkDependencies
+        checkLocalconfig
+        #we try to fork it again in case you execute this script on a board/computer which wasn't used for PRs yet
+        hub fork
+        git pull origin master
+        git push $(git remote -v | awk '{print $1}' | grep -vEw origin | tail -n -1) master
+    ;;
+    -d|--delete)
+        echo "list and delete remotebranches of your fork"
+        git checkout master
+        checkDependencies
+        checkLocalconfig
+        #we try to fork it again in case you execute this script on a board/computer which wasn't used for PRs yet
+        hub fork
+        for remote in $(git ls-remote --heads  $(git remote -v | awk '{print $1}' | grep -vEw origin | tail -n -1) | awk -F'refs/heads/' '{print $2}'); do
+            read -p 'Delete $remote on Remote [Yes/No]: ' $yn
+            if [[ $yn =~ ^[Yy](es)?$ ]]
+            then
+                git push --delete git remote -v | awk '{print $1}' | grep -vEw origin | tail -n -1 $remote
+            fi
     ;;
     *)
         checkDependencies
