@@ -1,0 +1,9 @@
+BOOT=yes
+VERSION=5.56
+KERNEL=3.10.107-pine64
+NETWORK=yes
+WIRELESS=yes
+HDMI=NT
+USB=yes
+DVFS=yes
+ARMBIANMONITOR=http://ix.io/1lme
