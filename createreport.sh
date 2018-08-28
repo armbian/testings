@@ -163,7 +163,7 @@ case $1 in
         #we try to fork it again in case you execute this script on a board/computer which wasn't used for PRs yet
         hub fork
         for remote in $(git ls-remote --heads  $(git remote -v | awk '{print $1}' | grep -vEw origin | tail -n -1) | awk -F'refs/heads/' '{print $2}'); do
-            echo -e "Should: ${bodl}${red}${remote}${NC} be deleted on remote?"
+            echo -e "Should: ${bold}${red}${remote}${NC} be deleted on remote?"
             read -p '[Yes/No]: ' yn
             if [[ $yn =~ ^[Yy](es)?$ ]]
             then
