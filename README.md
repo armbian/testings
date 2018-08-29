@@ -43,6 +43,9 @@ Check [here](https://beta.armbian.com/buildlogs/report.html) for current status.
 |orangepizero-next|:heavy_check_mark:|5.59.180825|4.14.67-sunxi|:heavy_check_mark:|:heavy_check_mark:|NA|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lhS|
 |orangepizeroplus2-h5-next|:heavy_check_mark:|5.59|4.14.65-sunxi64|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kMz|
 |orangepizeroplus-next|:heavy_check_mark:|5.59|4.14.65-sunxi64|:heavy_check_mark:|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kMJ|
+|pinebook-a64-default|:heavy_check_mark:|5.56|3.10.107-pine64|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: NT|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lme|
 |rock64-default|:heavy_check_mark:|5.59|4.4.152-rockchip64|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lhr|
+|teres-a64-dev|:heavy_check_mark:|5.59|4.18.5-sunxi64|na|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|:x:|http://ix.io/1lre|
+|tinkerboard-dev|:heavy_check_mark:|5.59.180828|4.18.5-rockchip|:heavy_check_mark:|:x:|:heavy_exclamation_mark: nt|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lrR|
 |tinkerboard-next|:heavy_check_mark:|5.59|4.14.67-rockchip|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1llp|
 |udoo-next|:heavy_check_mark:|5.59|4.4.150-udoo|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kMo|
