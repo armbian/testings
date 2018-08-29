@@ -145,6 +145,8 @@ Help us by test one of the boards listed here:
 - udoo-dev
 - udoo-next
 - udoo-next Board-Branch
+ 
+# Current status of boards
 |BOARD|BOOT|VERSION|KERNEL|ETH|WIFI|HDMI|USB|DVFS|ARMBIANMONITOR|
 |-----|----|-------|------|---|----|----|---|----|--------------|
 |bananapi-default|:heavy_check_mark:|5.59|3.4.113-sun7i|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQe|
