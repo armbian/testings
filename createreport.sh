@@ -114,7 +114,8 @@ createTable () {
     rm report.html diff.txt
 
     #chreat table of *.reports
-    echo "# Current status of boards"
+    echo " " > table.md
+    echo "# Current status of boards" >> table.md
     echo "|BOARD|BOOT|VERSION|KERNEL|ETH|WIFI|HDMI|USB|DVFS|ARMBIANMONITOR|" >> table.md
     echo "|-----|----|-------|------|---|----|----|---|----|--------------|" >> table.md
     # GitHub has no possibility to colorize text in MarkDown, so we use some emoticons :P 
