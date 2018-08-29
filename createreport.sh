@@ -93,7 +93,29 @@ createReport () {
 createTable () {
     git checkout master
     git pull origin master
-    echo "|BOARD|BOOT|VERSION|KERNEL|ETH|WIFI|HDMI|USB|DVFS|ARMBIANMONITOR|" > table.md
+    
+    #create list of not available reports
+    wget 'https://beta.armbian.com/buildlogs/report.html'
+
+    IFS=$'\r\n' GLOBIGNORE='*' command eval  'entry_html=($(cat report.html))'
+    for i in "${entry_html[@]}"; do
+        board_kernel_html+=($(echo $i | awk -F'</td><td>' '{print $2"-"$3}'))
+    done
+    for board in *.report; do
+        board_kernel_report+=(${board::-7})
+    done
+
+    printf '%s\n' "${board_kernel_report[@]} ${board_kernel_html[@]}" | sort | uniq -u > diff.txt
+    echo "# Currently missing board-kernel.report" > missing_boards.md
+    echo "Help us by test one of the boards listed here:" >> missing_boards.md
+    while read p; do
+        echo "- $p" >> missing_boards.md
+    done <diff.txt
+    rm report.html diff.txt
+
+    #chreat table of *.reports
+    echo "# Current status of boards"
+    echo "|BOARD|BOOT|VERSION|KERNEL|ETH|WIFI|HDMI|USB|DVFS|ARMBIANMONITOR|" >> table.md
     echo "|-----|----|-------|------|---|----|----|---|----|--------------|" >> table.md
     # GitHub has no possibility to colorize text in MarkDown, so we use some emoticons :P 
     cutter () {
@@ -142,7 +164,7 @@ case $1 in
         echo "update table and README.md"
         createTable
         head -17 README.md > README1.md && mv README1.md README.md
-        cat table.md >> README.md && rm table.md
+        cat missing_boards.md >> README.md && cat table.md >> README.md && rm table.md missing_boards.md
         git add -A && git commit -m"Table updated: $(date +%Y%m%d)" && git push
         ;;
     -u|--update)
