@@ -1,20 +1,20 @@
- 
-# Borads with outdated Reports:
-- pinebook-a64-default
- 
-# Current status of boards
-|BOARD|BOOT|VERSION|KERNEL|ETH|WIFI|HDMI|USB|DVFS|ARMBIANMONITOR|
-|-----|----|-------|------|---|----|----|---|----|--------------|
-|bananapi-default|:heavy_check_mark:|5.59|3.4.113-sun7i|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQe|
-|bananapim2plus-default|:heavy_check_mark:|5.59|3.4.113-sun8i|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lvo|
-|bananapim2plus-dev|:heavy_check_mark:|5.59.180827|4.18.5-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lpQ|
-|bananapim2plus-next|:heavy_check_mark:|5.59.180827|4.14.67-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lpO|
-|bananapim2ultra-dev|:heavy_check_mark:|5.59|4.18.3-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x:|http://ix.io/1kVQ|
-|bananapim3-dev|:heavy_check_mark:|5.59|4.18.5-sunxi|:heavy_check_mark:|:x:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lze|
-|bananapim64-next|:heavy_check_mark:|5.59|4.14.65-sunxi64|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x:|http://ix.io/1kV6|
-|bananapi-next|:heavy_check_mark:|5.59|4.14.65-sunxi|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQc|
-|bananapipro-default|:heavy_check_mark:|5.59.180828|3.4.113-sun7i|:heavy_check_mark:|:x:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lwH|
-|bananapipro-next|:heavy_check_mark:|5.59.180828|4.14.67-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lwF|
+# What do I need?
+
+1. Official Armbian nightly image (any stable can be switched to nightly from armbian-config)
+2. GitHub account credentials
+
+# How to create a test report?
+
+    git clone https://github.com/armbian/testings
+    cd testings
+    ./createreport.sh
+
+# How they are used?
+
+We are building kernels once per day and these reports are included in this cycle.
+
+Check [here](https://beta.armbian.com/buildlogs/report.html) for current status.
+
 # Currently missing board-kernel.report
 Help us by test one of the boards listed here:
 - bananapi-default
