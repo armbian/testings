@@ -91,8 +91,11 @@ createReport () {
 }
 
 createTable () {
+    # by dublicate a board listed in one of the other arrays, uniq -u will sort it out
+    blacklist=(Board-Branch)
     git checkout master
     git pull origin master
+    rm outdated.txt table.txt table.md missing_boards.md missing_boards.txt
     
     #create list of not available reports
     wget 'https://beta.armbian.com/buildlogs/report.html'
@@ -104,20 +107,25 @@ createTable () {
     for board in *.report; do
         board_kernel_report+=(${board::-7})
     done
-
-    printf '%s\n' "${board_kernel_report[@]} ${board_kernel_html[@]}" | sort | uniq -u > diff.txt
+    
+    rm missing_boards.txt
+    printf '%s\n' "${blacklist[@]} ${board_kernel_report[@]} ${board_kernel_html[@]}" | sort | uniq -u > missing_boards.txt
     echo "# Currently missing board-kernel.report" > missing_boards.md
     echo "Help us by test one of the boards listed here:" >> missing_boards.md
     while read p; do
         echo "- $p" >> missing_boards.md
-    done <diff.txt
-    rm report.html diff.txt
+    done <missing_boards.txt
+    rm report.html
 
-    #chreat table of *.reports
+    # create table of *.reports
     echo " " > table.md
     echo "# Current status of boards" >> table.md
     echo "|BOARD|BOOT|VERSION|KERNEL|ETH|WIFI|HDMI|USB|DVFS|ARMBIANMONITOR|" >> table.md
     echo "|-----|----|-------|------|---|----|----|---|----|--------------|" >> table.md
+    echo "BOARD;BOOT;VERSION;KERNEL;ETH;WIFI;HDMI;USB;DVFS;ARMBIANMONITOR" > table.txt
+    # create list of outdated reports
+    echo " " > outdated.md
+    echo "# Borads with outdated Reports:" >> outdated.md
     # GitHub has no possibility to colorize text in MarkDown, so we use some emoticons :P 
     cutter () {
         res=$(echo $1 | awk -F'=' '{print $2}')
@@ -141,6 +149,12 @@ createTable () {
     for board in *.report; do
         IFS=$'\r\n' GLOBIGNORE='*' command eval  'entry=($(cat ${board}))'
         echo "|"$(cutter "BOARD=${board::-7}")"|"$(cutter "${entry[0]}")"|"$(cutter "${entry[1]}")"|"$(cutter "${entry[2]}")"|"$(cutter "${entry[3]}")"|"$(cutter "${entry[4]}")"|"$(cutter "${entry[5]}")"|"$(cutter "${entry[6]}")"|"$(cutter "${entry[7]}")"|"$(cutter "${entry[8]}")"|" >> table.md
+        echo $(cutter "BOARD=${board::-7}")";"$(cutter "${entry[0]}")";"$(cutter "${entry[1]}")";"$(cutter "${entry[2]}")";"$(cutter "${entry[3]}")";"$(cutter "${entry[4]}")";"$(cutter "${entry[5]}")";"$(cutter "${entry[6]}")";"$(cutter "${entry[7]}")";"$(cutter "${entry[8]}") >> table.txt
+        # create list of outdated Reports
+        subversion=59
+        if [ echo $(cutter "${entry[1]}" | awk -F'.' '{print $2}' -lt $subversion ]; then
+            echo "- "${board::-7}  >> outdated.md
+            echo ${board::-7} >> outdated.txt
     done
 }
 
@@ -165,7 +179,7 @@ case $1 in
         echo "update table and README.md"
         createTable
         head -17 README.md > README1.md && mv README1.md README.md
-        cat missing_boards.md >> README.md && cat table.md >> README.md && rm table.md missing_boards.md
+        cat missing_boards.md >> README.md && cat table.md >> README.md
         git add -A && git commit -m"Table updated: $(date +%Y%m%d)" && git push
         ;;
     -u|--update)
