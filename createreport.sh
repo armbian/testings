@@ -183,7 +183,7 @@ case $1 in
         echo "update table and README.md"
         createTable
         head -17 README.md > README1.md && mv README1.md README.md
-        cat missing_boards.md >> README.md && cat outdated.md > README.md && cat table.md >> README.md
+        cat missing_boards.md >> README.md && cat outdated.md >> README.md && cat table.md >> README.md
         git add -A && git commit -m"Table updated: $(date +%Y%m%d)" && git push
         ;;
     -u|--update)
