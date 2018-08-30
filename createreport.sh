@@ -107,12 +107,13 @@ createTable () {
     done
     # by dublicate a board listed in one of the other arrays, uniq -u will sort it out
     blacklist=(Board-Branch)
-    printf '%s\n' "${blacklist[@]} ${board_kernel_report[@]} ${board_kernel_html[@]}" | sort | uniq -u > missing_boards.txt
+    printf '%s\n' "${blacklist[@]} ${board_kernel_report[@]} ${board_kernel_html[@]}" | sort | uniq -u >> missing_boards.txt
     echo "# Currently missing board-kernel.report" > missing_boards.md
     echo "Help us by test one of the boards listed here:" >> missing_boards.md
+    
     while read p; do
         echo "- $p" >> missing_boards.md
-    done <missing_boards.txt
+    done < missing_boards.txt
     rm report.html
 
     # create table of *.reports
@@ -142,6 +143,9 @@ createTable () {
             ;;
         esac
     }
+    cutter2 () {
+        res=$(echo $1 | awk -F'=' '{print $2}')
+    }
     # assuming we have 9 entries in createReport (), in case this changes, the echo command has to be adjusted (also the table header!) to generate a proper table in README.md
     # $(cutter "BOARD=${board::-7}") is a small 'hack' so that awk in cutter () works properly
     # define subversion which should be actuall at the moment
@@ -149,7 +153,7 @@ createTable () {
     for board in *.report; do
         IFS=$'\r\n' GLOBIGNORE='*' command eval  'entry=($(cat ${board}))'
         echo "|"$(cutter "BOARD=${board::-7}")"|"$(cutter "${entry[0]}")"|"$(cutter "${entry[1]}")"|"$(cutter "${entry[2]}")"|"$(cutter "${entry[3]}")"|"$(cutter "${entry[4]}")"|"$(cutter "${entry[5]}")"|"$(cutter "${entry[6]}")"|"$(cutter "${entry[7]}")"|"$(cutter "${entry[8]}")"|" >> table.md
-        echo $(cutter "BOARD=${board::-7}")";"$(cutter "${entry[0]}")";"$(cutter "${entry[1]}")";"$(cutter "${entry[2]}")";"$(cutter "${entry[3]}")";"$(cutter "${entry[4]}")";"$(cutter "${entry[5]}")";"$(cutter "${entry[6]}")";"$(cutter "${entry[7]}")";"$(cutter "${entry[8]}") >> table.txt
+        echo $(cutter2 "BOARD=${board::-7}")";"$(cutter2 "${entry[0]}")";"$(cutter2 "${entry[1]}")";"$(cutter2 "${entry[2]}")";"$(cutter2 "${entry[3]}")";"$(cutter2 "${entry[4]}")";"$(cutter2 "${entry[5]}")";"$(cutter2 "${entry[6]}")";"$(cutter2 "${entry[7]}")";"$(cutter2 "${entry[8]}") >> table.txt
         # create list of outdated Reports
         if [ $(echo $(cutter "${entry[1]}") | awk -F'.' '{print $2}') -lt $subversion ]; then
             echo "- "${board::-7}  >> outdated.md
