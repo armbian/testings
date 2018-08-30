@@ -1,7 +1,4 @@
  
-# Borads with outdated Reports:
-- pinebook-a64-default
- 
 # Current status of boards
 |BOARD|BOOT|VERSION|KERNEL|ETH|WIFI|HDMI|USB|DVFS|ARMBIANMONITOR|
 |-----|----|-------|------|---|----|----|---|----|--------------|

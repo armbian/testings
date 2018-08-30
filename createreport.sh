@@ -91,11 +91,9 @@ createReport () {
 }
 
 createTable () {
-    # by dublicate a board listed in one of the other arrays, uniq -u will sort it out
-    blacklist=(Board-Branch)
     git checkout master
     git pull origin master
-    rm outdated.txt table.txt table.md missing_boards.md missing_boards.txt
+    rm outdated.txt outdated.md table.txt table.md missing_boards.md missing_boards.txt
     
     #create list of not available reports
     wget 'https://beta.armbian.com/buildlogs/report.html'
@@ -107,8 +105,8 @@ createTable () {
     for board in *.report; do
         board_kernel_report+=(${board::-7})
     done
-    
-    rm missing_boards.txt
+    # by dublicate a board listed in one of the other arrays, uniq -u will sort it out
+    blacklist=(Board-Branch)
     printf '%s\n' "${blacklist[@]} ${board_kernel_report[@]} ${board_kernel_html[@]}" | sort | uniq -u > missing_boards.txt
     echo "# Currently missing board-kernel.report" > missing_boards.md
     echo "Help us by test one of the boards listed here:" >> missing_boards.md
@@ -146,15 +144,17 @@ createTable () {
     }
     # assuming we have 9 entries in createReport (), in case this changes, the echo command has to be adjusted (also the table header!) to generate a proper table in README.md
     # $(cutter "BOARD=${board::-7}") is a small 'hack' so that awk in cutter () works properly
+    # define subversion which should be actuall at the moment
+    subversion=59
     for board in *.report; do
         IFS=$'\r\n' GLOBIGNORE='*' command eval  'entry=($(cat ${board}))'
         echo "|"$(cutter "BOARD=${board::-7}")"|"$(cutter "${entry[0]}")"|"$(cutter "${entry[1]}")"|"$(cutter "${entry[2]}")"|"$(cutter "${entry[3]}")"|"$(cutter "${entry[4]}")"|"$(cutter "${entry[5]}")"|"$(cutter "${entry[6]}")"|"$(cutter "${entry[7]}")"|"$(cutter "${entry[8]}")"|" >> table.md
         echo $(cutter "BOARD=${board::-7}")";"$(cutter "${entry[0]}")";"$(cutter "${entry[1]}")";"$(cutter "${entry[2]}")";"$(cutter "${entry[3]}")";"$(cutter "${entry[4]}")";"$(cutter "${entry[5]}")";"$(cutter "${entry[6]}")";"$(cutter "${entry[7]}")";"$(cutter "${entry[8]}") >> table.txt
         # create list of outdated Reports
-        subversion=59
-        if [ echo $(cutter "${entry[1]}" | awk -F'.' '{print $2}' -lt $subversion ]; then
+        if [ $(echo $(cutter "${entry[1]}") | awk -F'.' '{print $2}') -lt $subversion ]; then
             echo "- "${board::-7}  >> outdated.md
             echo ${board::-7} >> outdated.txt
+        fi
     done
 }
 
@@ -179,7 +179,7 @@ case $1 in
         echo "update table and README.md"
         createTable
         head -17 README.md > README1.md && mv README1.md README.md
-        cat missing_boards.md >> README.md && cat table.md >> README.md
+        cat missing_boards.md >> README.md && cat outdated.md > README.md && cat table.md >> README.md
         git add -A && git commit -m"Table updated: $(date +%Y%m%d)" && git push
         ;;
     -u|--update)
