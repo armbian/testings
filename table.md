@@ -22,12 +22,21 @@
 |nanopct3plus-next|:heavy_check_mark:|5.59|4.14.65-s5p6818|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|http://ix.io/1kMg|
 |nanopct4-default|:heavy_check_mark:|5.59|4.4.152-rk3399|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lhu|
 |nanopiair-next|:heavy_check_mark:|5.59|4.14.65-sunxi|na|:heavy_check_mark:|na|na|:heavy_check_mark:|http://ix.io/1kMZ|
+|nanopiduo-default|:x:|||||||||
+|nanopiduo-dev|:heavy_check_mark:|5.59.180830|4.18.5-sunxi|:heavy_check_mark:|:x:|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lFg|
+|nanopiduo-next|:heavy_check_mark:|5.59|4.14.67-sunxi|:heavy_check_mark:|:x:|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lF1|
+|nanopifire3-next|:heavy_check_mark:|5.59|4.14.67-s5p6818|:heavy_check_mark:|na|:heavy_exclamation_mark: nt|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lE2|
 |nanopik1plus-dev|:heavy_check_mark:|5.59.180829|4.18.5-sunxi64|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lzw|
 |nanopik1plus-next|:heavy_check_mark:|5.59|4.14.65-sunxi64|:heavy_check_mark:|:x:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kMS|
 |nanopim1-dev|:heavy_check_mark:|5.59.180828|4.18.5-sunxi|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:x:|http://ix.io/1lwt|
 |nanopim1-next|:heavy_check_mark:|5.59.180828|4.14.67-sunxi|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lwp|
+|nanopineo2-dev|:heavy_check_mark:|5.59|4.18.5-sunxi64|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lDJ|
+|nanopineo2-next|:heavy_check_mark:|5.59.180830|4.14.67-sunxi64|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lDF|
 |nanopineocore2-next|:heavy_check_mark:|5.59|4.14.65-sunxi64|na|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kPF|
 |nanopineo-next|:x:|5.59.180828|4.14.67-sunxi|:x:|na|na|:x:|:x:||
+|odroidc1-next|:heavy_check_mark:|5.59|4.18.5-odroidc1|:heavy_check_mark:|na|:x:|:heavy_check_mark:|:x:|http://ix.io/1lBD|
+|odroidc2-default|:heavy_check_mark:|5.59.180830|3.16.57-odroidc2|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lDS|
+|odroidc2-next|:heavy_check_mark:|5.59|4.18.5-odroidc2|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lDQ|
 |odroidxu4-default|:heavy_check_mark:|5.59.180829|3.10.106-odroidxu4|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lzK|
 |odroidxu4-dev|:heavy_check_mark:|5.59.180829|4.18.0-rc4-odroidxu4|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lzR|
 |odroidxu4-next|:heavy_check_mark:|5.59.180829|4.14.66-odroidxu4|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lzO|
@@ -37,6 +46,7 @@
 |orangepipcplus-next|:heavy_check_mark:|5.59.180827|4.14.67-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1iiN|
 |orangepiprime-dev|:heavy_check_mark:|5.59|4.18.5-sunxi64|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x:|http://ix.io/1lzm|
 |orangepiprime-next|:heavy_check_mark:|5.59.180829|4.14.67-sunxi64|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lzp|
+|orangepizero-default|:heavy_check_mark:|5.59.180830|3.4.113-sun8i|:heavy_check_mark:|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lFy|
 |orangepizero-dev|:heavy_check_mark:|5.59.180825|4.18.5-sunxi|:heavy_check_mark:|:heavy_check_mark:|NA|:heavy_check_mark:|:x:|http://ix.io/1li2|
 |orangepizero-next|:heavy_check_mark:|5.59.180825|4.14.67-sunxi|:heavy_check_mark:|:heavy_check_mark:|NA|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lhS|
 |orangepizeroplus2-h5-next|:heavy_check_mark:|5.59|4.14.65-sunxi64|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kMz|

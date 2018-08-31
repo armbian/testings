@@ -43,10 +43,6 @@ Help us by test one of the boards listed here:
 - nanopct4-dev
 - nanopiair-default
 - nanopiair-dev
-- nanopiduo-default
-- nanopiduo-dev
-- nanopiduo-next
-- nanopifire3-next
 - nanopik2-s905-default
 - nanopik2-s905-next
 - nanopim1-default
@@ -56,8 +52,6 @@ Help us by test one of the boards listed here:
 - nanopim3-next
 - nanopim4-default
 - nanopim4-dev
-- nanopineo2-dev
-- nanopineo2-next
 - nanopineo4-default
 - nanopineo4-dev
 - nanopineocore2-dev
@@ -66,9 +60,6 @@ Help us by test one of the boards listed here:
 - nanopineoplus2-dev
 - nanopineoplus2-next
 - odroidc1-default
-- odroidc1-next
-- odroidc2-default
-- odroidc2-next
 - orangepi2-default
 - orangepi2-dev
 - orangepi2-next
@@ -96,7 +87,6 @@ Help us by test one of the boards listed here:
 - orangepiwin-default
 - orangepiwin-dev
 - orangepiwin-next
-- orangepizero-default
 - orangepizeroplus2-h3-default
 - orangepizeroplus2-h3-dev
 - orangepizeroplus2-h3-next
