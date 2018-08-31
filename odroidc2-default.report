@@ -1,0 +1,9 @@
+BOOT=yes
+VERSION=5.59.180830
+KERNEL=3.16.57-odroidc2
+NETWORK=yes
+WIRELESS=na
+HDMI=yes
+USB=yes
+DVFS=yes
+ARMBIANMONITOR=http://ix.io/1lDS
