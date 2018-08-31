@@ -98,7 +98,7 @@ pullRequestUpgrade () {
     BRANCH=$(cat /etc/armbian-release | grep BRANCH= | cut -c 8-)
     VERSION_BEFORE=$(cat /etc/armbian-release | grep VERSION= | cut -c 9-)
     echo "Update from: "$VERSION_BEFORE
-    apt update && sudo apt upgrade
+    sudo apt update && sudo apt upgrade
     VERSION_AFTER=$(cat /etc/armbian-release | grep VERSION= | cut -c 9-)
     git checkout -b $(date +%Y%m%d)-$BOARD-$BRANCH
     echo 'BOOT=no' > ${BOARD}-${BRANCH}.report
