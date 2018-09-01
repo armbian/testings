@@ -1,0 +1,9 @@
+BOOT=yes
+VERSION=5.59.180831
+KERNEL=4.4.152-mvebu
+NETWORK=yes
+WIRELESS=na
+HDMI=na
+USB=yes
+DVFS=no
+ARMBIANMONITOR=http://ix.io/1lKE
