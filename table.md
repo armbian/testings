@@ -12,13 +12,21 @@
 |bananapi-next|:heavy_check_mark:|5.59|4.14.65-sunxi|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQc|
 |bananapipro-default|:heavy_check_mark:|5.59.180828|3.4.113-sun7i|:heavy_check_mark:|:x:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lwH|
 |bananapipro-next|:heavy_check_mark:|5.59.180828|4.14.67-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lwF|
+|clearfogpro-default|:heavy_check_mark:|5.59.180831|4.4.152-mvebu|:heavy_check_mark:|na|na|:heavy_check_mark:|:x:|http://ix.io/1lKE|
+|clearfogpro-dev|:heavy_check_mark:|5.59.180901|4.18.5-mvebu|:heavy_check_mark:|na|na|:heavy_check_mark:|:x:|http://ix.io/1lKM|
+|clearfogpro-next|:heavy_check_mark:|5.59.180901|4.14.67-mvebu|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lKJ|
 |cubietruck-default|:heavy_check_mark:|5.59|3.4.113-sun7i|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQ2|
 |cubietruck-dev|:heavy_check_mark:|5.59|4.18.5-sunxi|:heavy_check_mark:|:x:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lnN|
 |cubietruck-next|:heavy_check_mark:|5.59|4.14.65-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kPU|
 |cubox-i-next|:heavy_check_mark:|5.59|4.14.65-cubox|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kVF|
 |espressobin-default|:heavy_check_mark:|5.59|4.14.67-mvebu64|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lia|
 |espressobin-next|:heavy_check_mark:|5.59|4.18.5-mvebu64|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lim|
+|helios4-default|:heavy_check_mark:|5.59.180901|4.4.152-mvebu|:heavy_check_mark:|na|na|:heavy_check_mark:|:x:|http://ix.io/1lKP|
 |helios4-next|:heavy_check_mark:|5.59.180825|4.14.65-mvebu|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lei|
+|lepotato-default|:heavy_check_mark:|5.59|4.14.67-meson64|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lJK|
+|lime-default|:heavy_check_mark:|5.59|3.4.113-sun7i|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lK5|
+|lime-dev|:heavy_check_mark:|5.59.180831|4.18.5-sunxi|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lK8|
+|lime-next|:heavy_check_mark:|5.59.180831|4.14.67-sunxi|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lK7|
 |nanopct3plus-next|:heavy_check_mark:|5.59|4.14.65-s5p6818|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|http://ix.io/1kMg|
 |nanopct4-default|:heavy_check_mark:|5.59|4.4.152-rk3399|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lhu|
 |nanopiair-next|:heavy_check_mark:|5.59|4.14.65-sunxi|na|:heavy_check_mark:|na|na|:heavy_check_mark:|http://ix.io/1kMZ|
@@ -33,13 +41,16 @@
 |nanopineo2-dev|:heavy_check_mark:|5.59|4.18.5-sunxi64|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lDJ|
 |nanopineo2-next|:heavy_check_mark:|5.59.180830|4.14.67-sunxi64|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lDF|
 |nanopineocore2-next|:heavy_check_mark:|5.59|4.14.65-sunxi64|na|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kPF|
-|nanopineo-next|:x:|5.59.180828|4.14.67-sunxi|:x:|na|na|:x:|:x:||
+|nanopineo-default|:heavy_check_mark:|5.59.180831|3.4.113-sun8i|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lJg|
+|nanopineo-dev|:heavy_check_mark:|5.59.180831|4.18.5-sunxi|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lJH|
+|nanopineo-next|:heavy_check_mark:|5.59|4.14.67-sunxi|:heavy_check_mark:|na|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lHY|
 |odroidc1-next|:heavy_check_mark:|5.59|4.18.5-odroidc1|:heavy_check_mark:|na|:x:|:heavy_check_mark:|:x:|http://ix.io/1lBD|
 |odroidc2-default|:heavy_check_mark:|5.59.180830|3.16.57-odroidc2|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lDS|
 |odroidc2-next|:heavy_check_mark:|5.59|4.18.5-odroidc2|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lDQ|
 |odroidxu4-default|:heavy_check_mark:|5.59.180829|3.10.106-odroidxu4|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lzK|
 |odroidxu4-dev|:heavy_check_mark:|5.59.180829|4.18.0-rc4-odroidxu4|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lzR|
 |odroidxu4-next|:heavy_check_mark:|5.59.180829|4.14.66-odroidxu4|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lzO|
+|orangepilite2-dev|:heavy_check_mark:|5.59|4.18.0-rc7-sunxi64|na|:x:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lJW|
 |orangepilite-default|:heavy_check_mark:|5.59|3.4.113-sun8i|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQl|
 |orangepione-next|:heavy_check_mark:|5.59|4.14.65-sunxi|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1kQj|
 |orangepipcplus-dev|:heavy_check_mark:|5.59.180827|4.18.5-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|:x:|http://ix.io/1lmm|
