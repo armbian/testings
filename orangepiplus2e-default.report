@@ -1,0 +1,9 @@
+BOOT=yes
+VERSION=5.59.180901
+KERNEL=3.4.113-sun8i
+NETWORK=yes
+WIRELESS=yes
+HDMI=yes
+USB=yes
+DVFS=yes
+ARMBIANMONITOR=http://ix.io/1lR6
