@@ -4,6 +4,6 @@ KERNEL=4.14.67-sunxi
 NETWORK=na
 WIRELESS=yes
 HDMI=yes
-USB=yes
+USB=nt
 DVFS=yes
 ARMBIANMONITOR=http://ix.io/1lRh
