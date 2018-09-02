@@ -1,0 +1,9 @@
+BOOT=yes
+VERSION=5.59.180901
+KERNEL=4.14.67-sunxi
+NETWORK=yes
+WIRELESS=yes
+HDMI=na
+USB=nt
+DVFS=yes
+ARMBIANMONITOR=http://ix.io/1lOs
