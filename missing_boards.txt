@@ -1,21 +1,13 @@
 bananapi-default
-bananapi-dev
 bananapim2ultra-dev
 bananapim3-dev
 bananapim64-next
-bananapipro-dev
-beelinkx2-default
-beelinkx2-dev
-beelinkx2-next
 Board-Branch bananapi-default
 clearfogbase-default
 clearfogbase-dev
 clearfogbase-next
-cubox-i-default
-cubox-i-dev
 firefly-rk3399-default
 firefly-rk3399-dev
-lepotato-next
 lime2-default
 lime2-dev
 lime2-next
@@ -27,14 +19,7 @@ lime-a64-next
 micro-default
 micro-dev
 micro-next
-miqi-default
-miqi-dev
-miqi-next
 nanopct4-dev
-nanopiair-default
-nanopiair-dev
-nanopik2-s905-default
-nanopik2-s905-next
 nanopim1-default
 nanopim1plus-default
 nanopim1plus-dev
@@ -50,33 +35,14 @@ nanopineoplus2-next
 orangepi2-default
 orangepi2-dev
 orangepi2-next
-orangepilite-dev
-orangepilite-next
-orangepione-default
-orangepione-dev
 orangepioneplus-dev
-orangepipc2-dev
-orangepipc2-next
 orangepipc-default
 orangepipc-dev
 orangepipc-next
 orangepipcplus-default
-orangepiplus2e-default
-orangepiplus2e-dev
-orangepiplus2e-next
 orangepiplus-default
 orangepiplus-dev
 orangepiplus-next
-orangepi-r1-default
-orangepi-r1-dev
-orangepi-r1-next
-orangepiwin-default
-orangepiwin-dev
-orangepiwin-next
-orangepizeroplus2-h3-default
-orangepizeroplus2-h3-dev
-orangepizeroplus2-h3-next
-orangepizeroplus2-h5-dev
 pine64-default
 pine64-dev
 pine64-next
@@ -91,5 +57,4 @@ rockpro64-default
 rockpro64-dev
 tinkerboard-default
 udoo-dev
-udoo-next
-udoo-next Board-Branch
+z28pro-default Board-Branch
