@@ -102,3 +102,9 @@ BOARD;BOOT;VERSION;KERNEL;ETH;WIFI;HDMI;USB;DVFS;ARMBIANMONITOR
 ;;;;;;;;;
 ;;;;;;;;;
 ;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
