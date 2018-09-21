@@ -5,5 +5,5 @@ NETWORK=yes
 WIRELESS=NA
 HDMI=yes
 USB=yes
-DVFS=no
+DVFS=yes
 ARMBIANMONITOR=https://pastebin.com/BXpx5qXh
