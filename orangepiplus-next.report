@@ -1,0 +1,9 @@
+BOOT=yes
+VERSION=5.60
+KERNEL=4.14.70-sunxi
+NETWORK=NT
+WIRELESS=yes
+HDMI=yes
+USB=yes
+DVFS=yes
+ARMBIANMONITOR=http://ix.io/1nit
