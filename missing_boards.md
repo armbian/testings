@@ -55,5 +55,4 @@ Help us by test one of the boards listed here:
 - rock64-dev
 - rockpro64-default
 - rockpro64-dev
-- tinkerboard-default
 - z28pro-default Board-Branch
