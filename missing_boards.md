@@ -38,8 +38,6 @@ Help us by test one of the boards listed here:
 - orangepi2-dev
 - orangepi2-next
 - orangepipc-default
-- orangepipc-dev
-- orangepipc-next
 - orangepipcplus-default
 - orangepiplus-default
 - orangepiplus-dev

@@ -78,6 +78,8 @@
 |orangepioneplus-dev|:heavy_check_mark:|5.59|4.18.0-rc7-sunxi64|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1m57|
 |orangepipc2-dev|:heavy_check_mark:|5.59.180901|4.18.5-sunxi64|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:x:|http://ix.io/1lRm|
 |orangepipc2-next|:heavy_check_mark:|5.59|4.14.67-sunxi64|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lRg|
+|orangepipc-dev|:heavy_check_mark:|5.59.180919|4.18.8-sunxi|:heavy_check_mark:|NA|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|https://pastebin.com/BXpx5qXh|
+|orangepipc-next|:heavy_check_mark:|5.59.180919|4.14.70-sunxi|:heavy_check_mark:|NA|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|https://pastebin.com/3NLDHaFs|
 |orangepipcplus-dev|:heavy_check_mark:|5.59.180827|4.18.5-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|:x:|http://ix.io/1lmm|
 |orangepipcplus-next|:heavy_check_mark:|5.59.180827|4.14.67-sunxi|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1iiN|
 |orangepiplus2e-default|:heavy_check_mark:|5.59.180901|3.4.113-sun8i|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lR6|
@@ -92,8 +94,8 @@
 |orangepiwin-dev|:heavy_check_mark:|5.59.180902|4.18.5-sunxi64|:x:|:heavy_check_mark:|:x:|:heavy_check_mark:|:x:|http://ix.io/1lUE|
 |orangepiwin-next|:heavy_check_mark:|5.59.180902|4.14.67-sunxi64|:x:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x:|http://ix.io/1lUC|
 |orangepizero-default|:heavy_check_mark:|5.59.180830|3.4.113-sun8i|:heavy_check_mark:|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lFy|
-|orangepizero-dev|:heavy_check_mark:|5.59.180825|4.18.5-sunxi|:heavy_check_mark:|:heavy_check_mark:|NA|:heavy_check_mark:|:x:|http://ix.io/1li2|
-|orangepizero-next|:heavy_check_mark:|5.59.180825|4.14.67-sunxi|:heavy_check_mark:|:heavy_check_mark:|NA|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lhS|
+|orangepizero-dev|:heavy_check_mark:|5.60.180923|4.18.9-sunxi|:heavy_check_mark:|:heavy_exclamation_mark: nt|na|:heavy_check_mark:|:x:|http://ix.io/1nxX|
+|orangepizero-next|:heavy_check_mark:|5.60.180923|4.14.71-sunxi|:heavy_check_mark:|:heavy_exclamation_mark: nt|na|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1nxS|
 |orangepizeroplus2-h3-default|:heavy_check_mark:|5.59|3.4.113-sun8i|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|http://ix.io/1lRu|
 |orangepizeroplus2-h3-dev|:heavy_check_mark:|5.59.180901|4.18.5-sunxi|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|http://ix.io/1lRr|
 |orangepizeroplus2-h3-next|:heavy_check_mark:|5.59|4.14.67-sunxi|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|http://ix.io/1lRh|
@@ -106,6 +108,7 @@
 |renegade-default|:heavy_check_mark:|5.59|4.4.153-rockchip64|:heavy_check_mark:|NA|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1m93|
 |rock64-default|:heavy_check_mark:|5.59|4.4.152-rockchip64|:heavy_check_mark:|na|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lhr|
 |teres-a64-dev|:heavy_check_mark:|5.59|4.18.5-sunxi64|na|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|:x:|http://ix.io/1lre|
+|tinkerboard-default|:heavy_check_mark:|5.60|4.4.156-rockchip|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1pzz|
 |tinkerboard-dev|:heavy_check_mark:|5.59.180828|4.18.5-rockchip|:heavy_check_mark:|:heavy_check_mark:|:heavy_exclamation_mark: nt|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1lvw|
 |tinkerboard-next|:heavy_check_mark:|5.59|4.14.67-rockchip|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|http://ix.io/1llp|
 |udoo-dev|:heavy_check_mark:|5.59|4.18.6-udoo|:heavy_check_mark:|:x:|:x:|:x:|:heavy_check_mark:|http://ix.io/1m18|

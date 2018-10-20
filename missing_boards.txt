@@ -36,8 +36,6 @@ orangepi2-default
 orangepi2-dev
 orangepi2-next
 orangepipc-default
-orangepipc-dev
-orangepipc-next
 orangepipcplus-default
 orangepiplus-default
 orangepiplus-dev
@@ -53,5 +51,4 @@ renegade-dev
 rock64-dev
 rockpro64-default
 rockpro64-dev
-tinkerboard-default
 z28pro-default Board-Branch
