@@ -1,0 +1,9 @@
+BOOT=yes
+VERSION=5.38
+KERNEL=4.14.81-sunxi
+NETWORK=nt
+WIRELESS=yes
+HDMI=nt
+USB=yes
+DVFS=nt
+ARMBIANMONITOR=http://ix.io/1u53
