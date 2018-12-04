@@ -1,0 +1,9 @@
+BOOT=yes
+VERSION=5.67
+KERNEL=4.19.6-meson64
+NETWORK=yes
+WIRELESS=NA
+HDMI=no
+USB=yes
+DVFS=yes
+ARMBIANMONITOR=http://ix.io/1v8Y
