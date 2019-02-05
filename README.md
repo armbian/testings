@@ -72,7 +72,7 @@ Help us by test one of the boards listed here:
 - rockpro64-dev
 - z28pro-default Board-Branch
  
-# Borads with outdated Reports:
+# Boards with outdated Reports:
 - pinebook-a64-default
  
 # Current status of boards
