@@ -1,0 +1,9 @@
+BOOT=yes
+VERSION=5.90
+KERNEL=4.19.57-sunxi64
+NETWORK=yes
+WIRELESS=nt
+HDMI=na
+USB=yes
+DVFS=nt
+ARMBIANMONITOR=http://ix.io/1O8z
