@@ -1,0 +1,9 @@
+BOOT=yes
+VERSION=20.05.1
+KERNEL=5.6.15-rockchip64
+NETWORK=yes
+WIRELESS=no
+HDMI=na
+USB=nt
+DVFS=nt
+ARMBIANMONITOR=http://ix.io/2odx
